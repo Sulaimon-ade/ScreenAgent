@@ -97,7 +97,7 @@ Please adjust according to your system environment. If you still encounter error
 
 Please fill in the above information in the `remote_vnc_server` item of the configuration file `client/config.yml`.
 
-## Step 2, Prepare the controller code running environment
+## Step 2, Prepare the controller code running environment 
 
 You need to run the controller code, which has three missions: First, the controller will connect to the VNC Server, collect screenshots, and send commands such as mouse and keyboard; Second, the controller maintains a state machine internally, implementing an automatic control process of planning, action, and reflection, guiding the agent to continuously interact with the environment; Finally, the controller will construct complete prompts based on the prompt word template, send them to the large model inference API, and parse the control commands in the large model generated reply. The controller is a program based on PyQt5, you need to install some dependencies:
 
